@@ -1,39 +1,43 @@
-# DP-FL Journal Track
+# Differentially Private Federated Learning Journal
 
-This repository is my working journal for studying **differential privacy in federated learning (DP-FL)**. It keeps the full research trail in one place—from reading and summarizing papers to implementing concepts and recording experimental results.
+This repository documents an ongoing study of **differential privacy in federated learning (DP-FL)**. It brings together paper reviews, concept notes, implementation practice, and experiments so that the progression from theory to reproducible results can be followed in one place.
 
-## Repository Contents
+## Research Scope
 
-| Area | Purpose | Current status |
-| --- | --- | --- |
-| `Notes/Papers/` | Structured paper-reading notes and summaries | 1 paper note started |
-| `Code/` | Concept implementations and coding practice | Not started |
-| `Experiments/` | Reproducible experiments, results, and observations | Not started |
+The work focuses on the privacy guarantees and practical trade-offs involved in federated learning, including:
 
-## Progress Tracker
+- record-level and client-level differential privacy;
+- central, local, and distributed DP trust models;
+- clipping, noise calibration, and privacy accounting;
+- client sampling and participation;
+- learning under non-IID data;
+- the relationship between privacy budgets and model utility.
 
-### Paper Reading
+## Repository Map
 
-| No. | Paper | Status | Notes |
+| Path | Contents |
+| --- | --- |
+| [`Notes/Papers/`](Notes/Papers/) | Structured reviews, questions, and takeaways from research papers |
+| `Code/` | Small implementations and coding exercises for DP-FL concepts (planned) |
+| `Experiments/` | Experiment configurations, results, and interpretations (planned) |
+
+## Reading Index
+
+| No. | Paper | Status | Entry |
 | ---: | --- | --- | --- |
-| 01 | Differentially Private Federated Learning: A Systematic Review | In progress | [Reading notes](Notes/Papers/01_fu_dpfl_systematic_review.md) |
+| 01 | *Differentially Private Federated Learning: A Systematic Review* | In progress | [Open notes](Notes/Papers/01_fu_dpfl_systematic_review.md) |
 
-### Code Practice
+## How to Navigate
 
-No code-practice entries yet.
+Start with the **Reading Index** above for the theoretical background. Each paper entry records the citation, motivation, important concepts, research questions, and a concise summary. As implementations and experiments are added, their corresponding sections will link the relevant code and results back to the papers or concepts they examine.
 
-### Experiments
+## Results and Highlights
 
-No experiments recorded yet.
+The repository is currently in its literature-review stage. No experimental results are available yet. Important findings, comparisons, and reproducible results will be summarized here as the work develops, with links to the supporting notes, code, and experiment records.
 
-## Tracking Convention
+## Current Progress
 
-- Add each paper as a numbered Markdown note under `Notes/Papers/`.
-- Put learning exercises and implementations under `Code/`.
-- Keep experiment setup, results, and conclusions under `Experiments/`.
-- Update this README whenever an item is added or its status changes so it remains the project index and progress dashboard.
-
-## Suggested Statuses
-
-Use consistent labels: `Planned`, `In progress`, `Completed`, or `On hold`.
+- **Literature review:** active
+- **Code practice:** not started
+- **Experiments:** not started
 
