@@ -41,3 +41,7 @@ The repository is currently in its literature-review stage. No experimental resu
 - **Code practice:** not started
 - **Experiments:** not started
 
+## Maintenance Workflow
+
+For each completed repository update, update this README to reflect the changes, then commit and push the changes together to the configured remote.
+
