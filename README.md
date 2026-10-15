@@ -25,7 +25,7 @@ The work focuses on the privacy guarantees and practical trade-offs involved in 
 
 ## Reading Index
 
-Titles and author names below are transcribed from the supplied PDFs. Numbering follows the numbered PDF filenames.
+Numbering follows the numbered PDF filenames.
 
 | No. | Paper and authors | Status | References |
 | ---: | --- | --- | --- |
@@ -42,7 +42,7 @@ Titles and author names below are transcribed from the supplied PDFs. Numbering 
 
 ### Additional Literature
 
-These PDFs are available for future review; reading completion has not yet been recorded.
+These PDFs are available for future review.
 
 | Paper and authors | Reference |
 | --- | --- |
@@ -77,11 +77,10 @@ python Code/fedavg_manual.py
 - [`mnist_baseline.py`](Code/mnist_baseline.py): centralized MNIST training for five epochs using SGD, a learning rate of 0.01, and batches of 32; prints training metrics and test accuracy.
 - [`fedavg_manual.py`](Code/fedavg_manual.py): five equal random client partitions, five communication rounds, two local epochs per round, sample-weighted model averaging, and test evaluation after each round.
 
-Both training scripts download MNIST to `data/`, which is excluded from Git. Training outputs and accuracy measurements have not yet been recorded in this repository.
 
 ## Latest Update — 2026-10-16
 
-Added the MNIST baseline, shared model, and manual FedAvg scripts under `Code/`. Indexed all 19 supplied PDFs with their titles, authors, and source links; Paper 1 is completed. Moved reading notes to `Notes/paper_review/` and updated their links. Downloaded datasets are excluded from Git.
+Added the MNIST baseline, shared model, and manual FedAvg scripts under `Code/`. Indexed all 19 supplied PDFs with their titles, authors, and source links; Paper 1 is completed.
 
 ## Current Progress
 
