@@ -18,7 +18,7 @@ The work focuses on the privacy guarantees and practical trade-offs involved in 
 | Path | Contents |
 | --- | --- |
 | [`lit review/`](lit%20review/) | Source PDFs: ten numbered papers and nine additional papers |
-| [`Notes/Papers/`](Notes/Papers/) | Structured reviews, questions, and takeaways from research papers |
+| [`Notes/paper_review/`](Notes/paper_review/) | Structured reviews, questions, and takeaways from research papers |
 | [`Code/`](Code/) | MNIST baseline, shared neural network, and manual FedAvg implementation |
 | [`src/main.py`](src/main.py) | Initial script trial |
 | `Experiments/` | Experiment configurations, results, and interpretations (planned) |
@@ -29,8 +29,8 @@ Titles and author names below are transcribed from the supplied PDFs. Numbering 
 
 | No. | Paper and authors | Status | References |
 | ---: | --- | --- | --- |
-| 01 | *Differentially Private Federated Learning: A Systematic Review* - Jie Fu, Yuan Hong, Xinpeng Ling, Leixia Wang, Xun Ran, Zhiyu Sun, Wendy Hui Wang, Zhili Chen, Yang Cao | Completed | [PDF](lit%20review/paper%201.pdf) / [Notes](Notes/Papers/01_fu_dpfl_systematic_review.md) |
-| 02 | *Communication-Efficient Learning of Deep Networks from Decentralized Data* - H. Brendan McMahan, Eider Moore, Daniel Ramage, Seth Hampson, Blaise Agüera y Arcas | Notes template created; review pending | [PDF](lit%20review/paper%202.pdf) / [Notes](Notes/Papers/02_Comm_Eff_deep_net.md) |
+| 01 | *Differentially Private Federated Learning: A Systematic Review* - Jie Fu, Yuan Hong, Xinpeng Ling, Leixia Wang, Xun Ran, Zhiyu Sun, Wendy Hui Wang, Zhili Chen, Yang Cao | Completed | [PDF](lit%20review/paper%201.pdf) / [Notes](Notes/paper_review/01_fu_dpfl_systematic_review.md) |
+| 02 | *Communication-Efficient Learning of Deep Networks from Decentralized Data* - H. Brendan McMahan, Eider Moore, Daniel Ramage, Seth Hampson, Blaise Agüera y Arcas | Notes template created; review pending | [PDF](lit%20review/paper%202.pdf) / [Notes](Notes/paper_review/02_Comm_Eff_deep_net.md) |
 | 03 | *Learning Differentially Private Recurrent Language Models* - H. Brendan McMahan, Daniel Ramage, Kunal Talwar, Li Zhang | Review pending | [PDF](lit%20review/paper%203.pdf) |
 | 04 | *Rényi Differential Privacy* - Ilya Mironov | Review pending | [PDF](lit%20review/paper%204.pdf) |
 | 05 | *Subsampled Rényi Differential Privacy and Analytical Moments Accountant* - Yu-Xiang Wang, Borja Balle, Shiva Prasad Kasiviswanathan | Review pending | [PDF](lit%20review/paper%205.pdf) |
@@ -81,7 +81,7 @@ Both training scripts download MNIST to `data/`, which is excluded from Git. Tra
 
 ## Latest Update — 2026-10-16
 
-Added the MNIST baseline, shared model, and manual FedAvg scripts under `Code/`. Indexed all 19 supplied PDFs with their titles, authors, and source links; Paper 1 is completed. Downloaded datasets are excluded from Git.
+Added the MNIST baseline, shared model, and manual FedAvg scripts under `Code/`. Indexed all 19 supplied PDFs with their titles, authors, and source links; Paper 1 is completed. Moved reading notes to `Notes/paper_review/` and updated their links. Downloaded datasets are excluded from Git.
 
 ## Current Progress
 
