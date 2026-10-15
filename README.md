@@ -26,7 +26,7 @@ The work focuses on the privacy guarantees and practical trade-offs involved in 
 
 | No. | Paper | Status | Entry |
 | ---: | --- | --- | --- |
-| 01 | *Differentially Private Federated Learning: A Systematic Review* | Reading complete; notes recorded | [Open notes](Notes/Papers/01_fu_dpfl_systematic_review.md) |
+| 01 | *Differentially Private Federated Learning: A Systematic Review* | Completed | [Open notes](Notes/Papers/01_fu_dpfl_systematic_review.md) |
 | 02 | Communication-efficient deep network training | Notes template created; review pending | [Open notes](Notes/Papers/02_Comm_Eff_deep_net.md) |
 
 ## How to Navigate
@@ -58,7 +58,7 @@ Added the MNIST baseline, shared model, and manual FedAvg scripts under `Code/`.
 
 ## Current Progress
 
-- **Literature review:** active
+- **Literature review:** Paper 1 completed; Paper 2 review pending
 - **Code practice:** MNIST and manual FedAvg implementations added; full training validation pending
 - **Experiments:** not started
 
