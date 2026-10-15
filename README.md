@@ -18,14 +18,16 @@ The work focuses on the privacy guarantees and practical trade-offs involved in 
 | Path | Contents |
 | --- | --- |
 | [`Notes/Papers/`](Notes/Papers/) | Structured reviews, questions, and takeaways from research papers |
-| `Code/` | Small implementations and coding exercises for DP-FL concepts (planned) |
+| [`Code/`](Code/) | MNIST baseline, shared neural network, and manual FedAvg implementation |
+| [`src/main.py`](src/main.py) | Initial script trial |
 | `Experiments/` | Experiment configurations, results, and interpretations (planned) |
 
 ## Reading Index
 
 | No. | Paper | Status | Entry |
 | ---: | --- | --- | --- |
-| 01 | *Differentially Private Federated Learning: A Systematic Review* | In progress | [Open notes](Notes/Papers/01_fu_dpfl_systematic_review.md) |
+| 01 | *Differentially Private Federated Learning: A Systematic Review* | Reading complete; notes recorded | [Open notes](Notes/Papers/01_fu_dpfl_systematic_review.md) |
+| 02 | Communication-efficient deep network training | Notes template created; review pending | [Open notes](Notes/Papers/02_Comm_Eff_deep_net.md) |
 
 ## How to Navigate
 
@@ -33,12 +35,31 @@ Start with the **Reading Index** above for the theoretical background. Each pape
 
 ## Results and Highlights
 
-The repository is currently in its literature-review stage. No experimental results are available yet. Important findings, comparisons, and reproducible results will be summarized here as the work develops, with links to the supporting notes, code, and experiment records.
+The repository now includes literature notes and initial implementation practice. No saved experimental results are available yet. The current training scripts implement non-private baselines; clipping, noise addition, and privacy accounting have not been implemented.
+
+## Code Practice
+
+Requires Python with `torch` and `torchvision` installed. Run these commands from the repository root:
+
+```powershell
+python Code/mnist_baseline.py
+python Code/fedavg_manual.py
+```
+
+- [`models.py`](Code/models.py): shared network with a 784-input layer, 128 hidden units, ReLU, and 10 output classes.
+- [`mnist_baseline.py`](Code/mnist_baseline.py): centralized MNIST training for five epochs using SGD, a learning rate of 0.01, and batches of 32; prints training metrics and test accuracy.
+- [`fedavg_manual.py`](Code/fedavg_manual.py): five equal random client partitions, five communication rounds, two local epochs per round, sample-weighted model averaging, and test evaluation after each round.
+
+Both training scripts download MNIST to `data/`, which is excluded from Git. Training outputs and accuracy measurements have not yet been recorded in this repository.
+
+## Latest Update — 2026-10-16
+
+Added the MNIST baseline, shared model, and manual FedAvg scripts under `Code/`. Updated the reading index and excluded downloaded datasets from Git.
 
 ## Current Progress
 
 - **Literature review:** active
-- **Code practice:** not started
+- **Code practice:** MNIST and manual FedAvg implementations added; full training validation pending
 - **Experiments:** not started
 
 ## Maintenance Workflow
